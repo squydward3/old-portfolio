@@ -1,0 +1,419 @@
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon);
+@import url(https://fonts.googleapis.com/css?family=Delius+Unicase:700);
+@import 'https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise';
+
+@font-face {
+    font-family: fever;
+    src: url(../css/fonts/fever.ttf);
+}
+
+/**************************** Basic Page *****************************/
+html, body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/**************************** Font *****************************/
+h3, h4, h5, p{
+  color: #777;
+}
+h1, .modal h2{
+  color: #F4B9B2;
+}
+p {
+  font-size: 1.3em;
+  line-height: 2;
+  font-family: 'Coming Soon', 'Ubuntu', sans-serif;
+}
+h4, .portfolio-modal .tagline {
+  color: #c0dfd9;
+  line-height: 1.5;
+  padding-bottom: 50px;
+  font-family: 'Coming Soon', 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+h1, .modal h2 {
+  font-family: fever, 'Ubuntu', sans-serif;;
+  font-size: 7em;
+  font-weight: 500;
+}
+@media only screen and (max-width: 499px) {
+  h1 {font-size: 5em;}
+}
+li {
+  font-family:'Delius Unicase', 'Righteous', sans-serif;
+}
+
+
+/*********** About *************/
+.about-tagline {
+  font-size: 2em;
+}
+.about-highlight {
+  color: #f48ba0;
+}
+
+hr {
+	background:url(hr.png) no-repeat top center;
+	height:47px;
+	border:none;
+}
+/************************************************** navbar ******************************************************/
+.navbar {
+    border: none;
+}
+
+.navbar-default {
+    background-color: transparent;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.navbar-right {
+    top: 100px;
+    position: relative;
+    clear: right;
+}
+
+.navbar-nav > li {
+    float: none;
+}
+
+.navbar-nav > li > a {
+    padding: 6px;
+    text-align: right;
+    font-size: 1.2em;
+}
+.navbar-right > li.active>a:after {
+    font-family: "Times New Roman";
+    content: '\00b7';
+    position: absolute;
+    right: -10px;
+    font-size: 40px;
+    vertical-align: text-top;
+    margin-left: 5px;
+}
+
+/******** Nav Link Styling ********/
+.navbar-nav > li > a:hover {
+  color: #c0dfd9;
+  background: transparent;
+}
+
+.navbar-default .navbar-nav .active a {
+  font-weight: 700;
+  color: #c0dfd9;
+  background: transparent;
+  text-shadow: none;
+}
+
+.navbar-default .navbar-nav .active a:hover {
+  color: #c0dfd9;
+  background: transparent;
+  text-shadow: none;
+}
+
+.navbar-default .navbar-nav .active a:focus {
+  background: transparent;
+  text-shadow: none;
+}
+
+
+/**************************************************** Page aka Section ****************************************************/
+.page {
+  padding-top: 100px;
+}
+.page#gallery {
+  padding-bottom: 80px;
+}
+/******************* partition ***********************/
+.container {
+  position: relative;
+}
+.container .partition {
+  position: absolute;
+  width: 85%;
+  left: 10px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 754px) {
+  .container .partition {
+    right: 10px;
+    width: 95%;
+  }
+}
+#about .container .row, #projects .container .content, #contact .container .content {
+  padding-top: 100px;
+}
+#gallery .container .content {
+  padding-top: 60px;
+}
+
+/**************************** Intro *****************************/
+#intro {
+  height: 750px;
+  padding-top: 0;
+}
+@media (min-width: 1171px) {
+  #intro {
+    background: url(../me2.png) no-repeat fixed center;
+    background-size: contain;
+    -webkit-animation: fadeIn 3s;
+    z-index: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+/*Wiggle bg*/
+.demo5 .bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (max-width: 1170px) {
+  .bg {display: none;}
+  #intro {
+          background: url(../static-bg.png) no-repeat center;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+        }
+}
+
+/**************************** About *****************************/
+
+/*#about {
+  z-index: 2;
+}*/
+
+#about .about-text {
+  text-align: left;
+}
+
+@media only screen and (min-width: 1199px) {
+  #about { height: 830px};
+}
+
+@media only screen and (min-width: 462px) {
+  .arrow {
+    padding-top: 140px;
+  }
+}
+
+
+/**************************** Projects *****************************/
+#projects h1 {
+  font-size: 5.5em;
+}
+/*thumbnails*/
+.overall {
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.overall img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.overall:hover img {
+  -moz-transform: scale(1.15) rotate(-10deg);
+  -webkit-transform: scale(1.15) rotate(-10deg);
+  transform: scale(1.15) rotate(-10deg);
+}
+
+/*decor*/
+.decor {
+  margin-top: 100px;
+  opacity: 0;
+}
+
+/**************************** Gallery *****************************/
+#gallery {
+  height: auto;
+}
+#gallery .container {
+  position: relative;
+}
+#gallery h1 {
+  font-size: 5.5em;
+}
+
+/************* Thumbnails ****************/
+@media (min-width: 995px) {
+  figure.effect-lily:nth-of-type(3) {margin-top: 18px;}
+}
+figure.effect-lily h2,
+figure.effect-lily p {
+  color: #fff;
+}
+figure.effect-lily h2 {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+}
+figure.effect-lily p {
+  text-transform: none;
+  color: #F4B9B2;
+}
+figure.effect-lily:hover p {
+  opacity: .7
+}
+
+
+/************* Porfolio Modals ****************/
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin-top: 0px;
+    font-size: 4em;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #729f98;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #729f98;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+.modal-description {
+  text-align: left;
+  margin-top: 50px;
+}
+
+
+@media(max-width:990px) {
+  .portfolio-modal .modal-content h2 {
+      margin-top: 50px;
+      font-size: 3em;
+  }
+  .modal-description {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+  }
+}
+@media(max-width:522px) {
+  .modal-description {
+    text-align: left;
+    width: auto;
+  }
+}
+
+/**************************** Form *****************************/
+#contact h1 {
+  font-size: 5.5em;
+}
+form {
+  margin-bottom: 160px;
+  text-align: left;
+}
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  line-height: 2;
+  font-family: 'Coming Soon', 'Ubuntu', sans-serif;
+  color: #777;
+}
+textarea {
+  resize:none;
+  overflow: hidden;
+  height: 250px;
+}
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+ outline: 0 none;
+}
+
+button {
+  background: none;
+  border: 3px solid #c0dfd9;
+  border-radius: 6px;
+  padding: 5px 20px;
+  font-size: 1.5em;
+  line-height: 2;
+  font-family:'Delius Unicase', 'Righteous', sans-serif;
+  color: #F4B9B2;
+}
+button:hover {
+  background-color: #c0dfd9;
+}
+
+
+/**************************** Contact *****************************/
+#contact h4 {padding-bottom: 0;}
+svg.svg {
+  width: 15em;
+  height: 15em;
+  fill: #777;
+}
+
+/**************************** Footer *****************************/
+#footer {
+  width:100%;
+}
+
+#footer .row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#footer p{
+  font-size: 1.1em;
+  padding-top: 20px;
+}

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="The official webpage of Sydney Mai. Brooklyn-based web developer. CSS design and animation enthusiast.">
+    <meta name="author" content="Sydney Mai">
+		<meta name="keywords" content="sydney mai, web developer, brooklyn, new york, nyu">
+
+		<title>Sydney Mai Official</title>
+
+		<!--Bootstrap css-->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+		<!-- interactive background -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+   	<script type="text/javascript" src="js/jquery.interactive_bg.js"></script>
+
+
+		<!-- Fotorama -->
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+
+		<!-- hierarchicalDisplay -->
+		<link href="css/zmd.hierarchical-display.min.css" rel="stylesheet">
+
+		<!-- tn-grid-expand -->
+		<link href="css/tn-grid-expand-component.css" rel="stylesheet">
+
+
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+		<!--Font Awesom from Freelancer Bootstrap for PLUS sign-->
+		<link href="css/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+		<!-- Hover style -->
+		<link href="css/hover.css" rel="stylesheet">
+		<!-- Animate style -->
+		<link href="css/animate.css" rel="stylesheet">
+		<!-- Grid hover style -->
+		<link href="css/set1.css" rel="stylesheet">
+
+
+		<!-- Custom style -->
+		<link href="css/style.css" rel="stylesheet">
+
+
+
+		<!--icon-->
+		<link rel="icon" href="img/misc/icon-gd.png">
+
+		<!-- Google analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-88245114-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+
+	</head>
+
+
+
+
+
+
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+		<!-- Navigation -->
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<div class="container">
+								<div class="navbar-header page-scroll">
+								</div>
+								<div class="collapse navbar-collapse row">
+										<ul class="nav navbar-nav navbar-right col-lg-2 ">
+												<li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+												<li><a class="page-scroll" href="#intro">Home</a></li>
+												<li><a class="page-scroll" href="#about">About</a>
+												<li><a class="page-scroll" href="#projects">Projects</a></li>
+												<li><a class="page-scroll" href="#gallery">Gallery</a></li>
+										</ul>
+								</div><!--.navbar-collapse -->
+						</div><!--.container -->
+			</nav>
+
+
+		<!-- Header -->
+			<header id="intro" class="intro-section page no-js demo5">
+				<!--Interactive bg-->
+				<div class="container bg animated slideInDown" data-ibg-bg="wiggle-bg.png"></div>
+				<script type="text/javascript">
+					$(".bg").interactive_bg();
+					$(window).resize(function() {
+							$(".bg > .ibg-bg").css({
+								width: $(window).outerWidth(),
+								height: $(window).outerHeight()
+							});
+					 });
+				</script>
+		  </header>
+
+
+
+			<!-- About Section -->
+			<section id="about" class="page">
+					<div class="container content">
+
+							<div class="partition">
+								<img  src="img/misc/about-line.png">
+							</div>
+
+							<div class="row">
+									<div class="col-lg-3 col-sm-10">
+										<h1>About</h1>
+										<hr>
+										<h4 class="about-tagline">My name is Sydney Mai. I write code and do Photoshop. Big time.</h4>
+									</div>
+
+									<div class="col-lg-6 col-lg-offset-1 col-sm-10 about-text">
+										<p >Hello - if you're a stranger to this page, my name is Sydney Mai. Nice to meet you &#x263A I live in this place called <span class="about-highlight">Brooklyn</span>, New York where people eat salad out of mason jars and every apartment has at least one exposed brick wall.</p>
+										<p>I started writing my first line of <span class="about-highlight">code</span> not too long ago but am already obsessed with building beautiful websites. When I'm not coding, you can find me editing photos. <span class="about-highlight">Editorial</span> photography is also one of my favorite things.</p>
+										<p>I'm currently a senior at NYU majoring in Media & Communication with a minor in <span class="about-highlight">Web Development</span>.</p>
+										<p>Check out below for some of my works!</p>
+									</div>
+							</div>
+
+							<div class = "col-sm-8 col-sm-offset-4 about-decor">
+								<img class="arrow" src="img/bg/arrow.png">
+								<img class="bottle" src="img/bg/bottle.png">
+							</div>
+
+					</div>
+			</section>
+
+
+			<!-- Projects Section -->
+			<section id="projects" class="page">
+				<div class="container" style="position: relative;">
+
+						<img src="img/misc/projects-line.png" style="position: absolute; width: 85%; left: 10px;">
+
+						<div class = "content">
+							<div class="row">
+								<div class="col-md-4">
+										<h1>Projects</h1>
+										<hr>
+										<h4>My web-related projects</h4>
+								</div>
+							</div>
+
+							<ul id="og-grid" class="og-grid">
+								<li>
+									<a href="interactive-resume/index.html" target="_blank" data-largesrc="img/projects/tn-1-resume-expand.png" data-title="RESUME" data-description="A space-theme interactive resume featuring parallax design and scroll-based animation.">
+										<div class="overall">
+											<img src="img/projects/tn-1-resume.png" alt='web project 1'>
+											<!-- <div class="item-overlay top"></div> -->
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="frames/index.html" target="_blank" data-largesrc="img/projects/tn-2-frames-expand.png" data-title="FRAMES" data-description="A fully responsive sortable image gallery featuring some of my favorite anime scenes. Enhanced with draggable features. My first web application. Still a working process.">
+										<div class="overall">
+											<img src="img/projects/tn-2-frames.png" alt='web project 1'>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="http://i6.cims.nyu.edu/~apm417/thesydstore/index.html" target="_blank" data-largesrc="img/projects/tn-3-store-expand.png" data-title="THE SYD STORE" data-description="My fully responsive mockup e-commerce store! Originally a class assignment that incorporated PHP excercises. Still a working process.">
+										<div class="overall">
+											<img src="img/projects/tn-3-store.png" alt='web project 1'>
+										</div>
+									</a>
+								</li>
+							</ul>
+
+					</div>
+
+					<div class="row decor">
+							<img class="col-md-1 col-md-offset-2" src="img/gallery/decor-small-eye.png">
+							<img class="col-md-1 col-md-offset-2" src="img/gallery/decor-small-star.png">
+							<img class="col-md-1 col-md-offset-2" src="img/gallery/decor-small-triangle.png">
+					</div>
+				</div>
+			</section>
+
+
+
+			<!-- Gallery Section -->
+			<section id="gallery" class="page">
+					<div class="container">
+
+						<div class="partition">
+							<img src="img/misc/gallery-line.png">
+						</div>
+
+						<div class = "content">
+							<div class="row">
+								<div class="col-md-4">
+									<h1>Gallery</h1>
+									<hr>
+									<h4>collections of editorial photographs</h4>
+								</div>
+							</div>
+
+							<div class="grid col-md-10">
+
+								<figure class="effect-lily">
+									<img src="img/gallery/tn1.png" alt="blue photo collection"/>
+									<figcaption>
+										<div>
+											<h2>Blue</h2>
+											<p>Williamsburg, Brooklyn. Jan 2016.</p>
+										</div>
+										<a href="#portfolioModal2" data-toggle="modal">View more</a>
+									</figcaption>
+								</figure>
+
+								<figure class="effect-lily">
+									<img src="img/gallery/tn2.png" alt="the most beautiful moment in life photo collection"/>
+									<figcaption>
+										<div>
+											<h2>TMBMIL</h2>
+											<p>Prospect Park, Brooklyn. May 2016.</p>
+										</div>
+										<a href="#portfolioModal1" data-toggle="modal">View more</a>
+									</figcaption>
+								</figure>
+
+								<figure class="effect-lily">
+									<img src="img/gallery/tn3.png" alt="Harajuku photo collection"/>
+									<figcaption>
+										<div>
+											<h2>harajuku</h2>
+											<p>West Village, New York. Dec 2016.</p>
+										</div>
+										<a href="#portfolioModal3" data-toggle="modal">View more</a>
+									</figcaption>
+								</figure>
+							</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<!-- Contact Section -->
+			<section id="contact" class="page">
+					<div class="container">
+
+						<div class="partition">
+							<img src="img/misc/about-line.png">
+						</div>
+
+						<div class = "content">
+							<div class="row">
+								<div class="col-md-4">
+									<h1>Contact</h1>
+									<hr>
+									<h4>get in touch with me!~</h4>
+									<svg class='svg contact'><use xlink:href='img/svg/svgfiles.svg#contact'/></svg>
+								</div>
+
+							<div class="col-md-offset-1 col-md-5">
+								<form name='contact' action='https://formspree.io/mpanh3110@gmail.com' method="post" enctype="text/plain">
+									<input type='text' name='name' placeholder='Name : '>
+									<input type='email' name='_replyto' placeholder='Email : '>
+									<textarea name='message' placeholder='Write your message . . .' onchange="adjust_textarea(this)"></textarea>
+									<input type="text" name="_gotcha" style="display:none" />
+									<button type='submit' name='send'>Sen:d</button>
+								</form>
+							</div>
+						</div> <!--close row-->
+					</div>
+				</div>
+			</section>
+
+
+
+			<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<div class="partition">
+						<img src="img/misc/footer-line.png">
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 social-media">
+							<a href="https://twitter.com/" target="_blank"><img class="hvr-bob" src="img/socialmedia/twitter.png" width="65px" height="65px"></a>
+							<a href="https://vine.co/" target="_blank"><img class="hvr-bob" src="img/socialmedia/vine.png" width="65px" height="65px"></a>
+							<a href="https://www.instagram.com/sydthesquid3110/" target="_blank"><img class="hvr-bob" src="img/socialmedia/instagram.png" width="65px" height="65px"></a>
+							<a href="https://soundcloud.com/syddd3110" target="_blank"><img class="hvr-bob" src="img/socialmedia/soundcloud.png" width="65px" height="65px"></a>
+						</div>
+						<div class="col-md-6 col-md-offset-1 col-sm-6 copyright">
+							<p>Copy © 2017 Sydney Mai Design. All rights reserved.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- Portfolio Modals -->
+			<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-content">
+							<div class="close-modal" data-dismiss="modal">
+									<div class="lr">
+											<div class="rl">
+											</div>
+									</div>
+							</div>
+							<div class="container-fluid">
+								<div class="row">
+										<div class="col-md-9">
+												<div class="fotorama tmbmil" data-nav="thumbs" data-keyboard="true"></div>
+										 </div>
+											<div class="col-md-3">
+												<h2>花樣年華</h2>
+												<hr>
+												<p class="tagline">a Collection</p>
+												<div class="modal-description">
+													<p>Inspired by BTS's 花樣年華 (The Most Beautiful Moment in Life) LP Triology</p>
+													<p>Taken at Prospect Park, Brooklyn, NY</p>
+													<p>Special thanks to my model Alexandra Gruzinova</p>
+													<p>5/19/2016</p>
+												</div>
+											</div>
+									</div>
+							</div>
+						</div>
+				</div>
+
+			<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+										<div class="rl">
+										</div>
+								</div>
+						</div>
+						<div class="container-fluid">
+							<div class="row">
+									<div class="col-md-9">
+											<div class="fotorama blue" data-nav="thumbs" data-keyboard="true"></div>
+									</div>
+									<div class="col-md-3">
+											<h2>Blue</h2>
+											<hr>
+											<p class="tagline">the Blue Collection</p>
+											<div class = "modal-description">
+												<p>Inspired by Big Bang's "Blue" music video</p>
+												<p>Taken at Williamsburg and Bushwick, Brooklyn, NY</p>
+												<p>Special thanks to my model Carly Paulauskis</p>
+												<p>1/2016</p>
+											</div>
+									</div>
+							</div>
+						</div>
+					</div>
+			</div>
+
+			<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+										<div class="rl">
+										</div>
+								</div>
+						</div>
+						<div class="container-fluid">
+							<div class="row">
+									<div class="col-md-9">
+											<div class="fotorama harajuku" data-nav="thumbs" data-keyboard="true"></div>
+									</div>
+									<div class="col-md-3">
+											<h2>Harajuku</h2>
+											<hr>
+											<p class="tagline">the Harajuku collection</p>
+											<div class = "modal-description">
+												<p>Inspired by Harajuku fashion and style</p>
+												<p>Taken at West Village, NY, NY</p>
+												<p>Special thanks to my model Jungmoon</p>
+												<p>12/2016</p>
+											</div>
+									</div>
+							</div>
+						</div>
+					</div>
+			</div>
+
+
+
+
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+
+	<!-- Scrolling Nav JavaScript -->
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/scrolling-nav.js"></script>
+
+
+	<!-- Carousel -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+	<!-- hierarchicalDisplay -->
+	<script src="js/jquery.zmd.hierarchical-display.min.js"></script>
+
+	<!-- tn-grid-expand -->
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/tn-grid-expand.js"></script>
+
+	<script>
+		$(function() {
+			Grid.init();
+		});
+	</script>
+
+	<!-- My script -->
+	<script type="text/javascript" src="js/myscript.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
+
+	</body>
+</html>
